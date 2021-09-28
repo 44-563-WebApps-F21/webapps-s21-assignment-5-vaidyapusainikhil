@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>responsive design using bootstrap</title>
+    <title>Responsive design using bootstrap</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,6 +23,25 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Plane.html">Plane</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="train.html">Train</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h1>Animals by Sai Nikhil Vaidyapu</h1>
     <div class="container">
         <div class="row">
@@ -127,15 +146,33 @@
             <button type="button" class="btn btn-danger">A</button>
         </div>
     </div>
-    <div class="dropdown" >
-        <button class="btn dropdown-toggle" style="background-color: lightblue;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Menu
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" style="background-color: lightblue;" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="play.html">To Play</a>
-          <a class="dropdown-item" href="train.html">To Train</a>
+            <a class="dropdown-item" href="Plane.html">To Plane</a>
+            <a class="dropdown-item" href="train.html">To Train</a>
         </div>
-      </div>
+    </div>
+
+    <form style="width: 30%;">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label">Animal</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Animal">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
 </body>
 
