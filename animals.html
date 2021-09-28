@@ -14,6 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <style>
+        tr:nth-child(even) {
+            background-color: lavenderblush;
+        }
+    </style>
 
 </head>
 
@@ -41,16 +46,97 @@
     <p>When I reduce my browser size, Animal names breaks first. For classes that has small sm we are using small column
         length. For medium length. When we are reducing screen size medium column breaks first.</p>
 
-        <div class="containrer">
-            <img src="images/Adelie penguin.jpg" alt="Adelie Penguin" width="350" height="400">
-            <img src="images/Deer.jpg" alt="Deer" width="400" height="400">
-            <img src="images/Vulture.jpg" alt="Vulture" width="400" height="400">
+    <div class="container">
+        <img src="images/Adelie penguin.jpg" alt="Adelie Penguin" width="400" height="400">
+        <img src="images/Deer.jpg" alt="Deer" width="400" height="400">
+        <img src="images/Vulture.jpg" alt="Vulture" width="400" height="400">
+    </div>
+    <div class="container">
+        <img src="images/Adelie penguin.jpg" class="img-thumbnail" alt="Adelie Penguin" width="400" height="400">
+        <img src="images/Deer.jpg" class="img-thumbnail" alt="Deer" width="400" height="400">
+        <img src="images/Vulture.jpg" class="img-thumbnail" alt="Vulture" width="400" height="400">
+    </div>
+    <table class="table table-bordered caption-top"
+        style="width:50%; border: solid rgb(156, 129, 129); border-collapse: collapse;">
+        <caption>List of Animals</caption>
+        <thead>
+            <tr style="background-color: lavender;">
+                <th scope="col">Letter</th>
+                <th scope="col">Animals</th>
+                <th scope="col">City</th>
+                <th scope="col">Car</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">V</th>
+                <td>Vulture</td>
+                <td>Vancouver</td>
+                <td>Vencer</td>
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>African Civet</td>
+                <td>Amarillo</td>
+                <td>Audi</td>
+            </tr>
+            <tr>
+                <th scope="row">I</th>
+                <td>Impala</td>
+                <td>Irvine</td>
+                <td>I3-BMW</td>
+            </tr>
+            <tr>
+                <th scope="row">D</th>
+                <td>Deer</td>
+                <td>Dallas</td>
+                <td>Dart</td>
+            </tr>
+            <tr>
+                <th scope="row">Y</th>
+                <td>Yak</td>
+                <td>Yuma</td>
+                <td>Yaris</td>
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>Adelie Penguin</td>
+                <td>Arlington</td>
+                <td>Aurus Senat</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button type="button" class="btn" style="background-color: blue;">V</button>
+    <button type="button" class="btn" style="background-color: blue;">A</button>
+    <button type="button" class="btn" style="background-color: blue;">I</button>
+    <button type="button" class="btn" style="background-color: blue;">D</button>
+    <button type="button" class="btn" style="background-color: blue;">Y</button>
+    <button type="button" class="btn" style="background-color: blue;">A</button>
+    <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-success">V</button>
+            <button type="button" class="btn btn-success">D</button>
+            <button type="button" class="btn btn-success">A</button>
         </div>
-        <div class="container">
-            <img src="Adelie penguin.jpg" class="img-thumbnail" alt="Adelie Penguin" width="350" height="400">
-            <img src="images/Deer.jpg" class="img-thumbnail" alt="Deer" width="400" height="400">
-            <img src="images/Vulture.jpg" class="img-thumbnail" alt="Vulture" width="400" height="400">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-warning">I</button>
+            <button type="button" class="btn btn-warning">Y</button>
         </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">A</button>
+        </div>
+    </div>
+    <div class="dropdown" >
+        <button class="btn dropdown-toggle" style="background-color: lightblue;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="play.html">To Play</a>
+          <a class="dropdown-item" href="train.html">To Train</a>
+        </div>
+      </div>
+
 </body>
 
 </html>
